@@ -1,0 +1,455 @@
+
+/************************* ID AND CLASS ELEMENTS *****************************/
+
+/*WE USE CLASS TAG WHEN WE WANT MORE THINGS TO HAVE THE SAME CARACTERISTICS
+AND WE USE ID SELECTOR WHEN WE WANT TO EDIT A SINGLE ELEMENT.
+CLASS SELECTOR CAN BE USED TO MULTIPLE ELEMENTS(EX: WE CAN GIVE A LOT OF ELEMENTS
+THE BACON TAG) AND ID SELECTORS CAN BE USED TO A SINGLE ELEMENT(EX: WE CAM GIVE
+THE ID TO A SINGLE ELEMENT, WE CANT GIVE THE SAME ID NAME TO DIFFERENT ELEMENTS)*/
+
+/*THE ID SELECTOR HAS THE HIGHEST PRIORITY*/
+
+/*THE CLASS SELECTOR HAS THE LOWEST PRIORITY*/
+
+/*wE CAN GIVE MULTIPLE CLASSES TO AN ELEMENT BUT A SINGLE ID SELECTOR*/
+
+/*CLASS SELECTORS ARE BETTER THAN ID SELECTORS FOR CSS EDITING*/
+
+
+/************************** DISPLAY ELEMENT **********************************/
+
+/*We use "display: bloc;" to make elements that dont let you change their
+caracteristics (height, width) to editable elements*/
+
+/*We use "display: inline;" to make elements that dont let other ELEMENTS
+on the same row, with the inlined but we cant change their width*/
+
+/*We use "display: inline-bloc;" to make elements that dont let other ELEMENTS
+on the same row, with the inlined-bloc we can change their width and caracteristics*/
+
+/*We use "display: none;" to make elements dissapear from their box, and there
+will be displayed just the box with the caracteristics you chose*/
+
+
+/************************** DISPLAY ELEMENT **********************************/
+
+/* We use "visibility: hidden" when we want to hide the content of the box,
+basicly when we use that the neighbour elements flow arround the element normaly
+but we cant see it*/
+
+
+/******************************* IMG ELEMENT **********************************/
+
+/*IMG elements are basicly inlined-bloc elements*/
+
+
+/**************************** POSITION SELECTORS ******************************/
+
+/*POSITION FIXED***** If we give fixed positioning "position:fixed;" to an element, that element
+stays in that place even if the user scrolls down, that is really usefull if we
+want to create a navigation-bar or a side-bar*/
+
+/*REMOVE AN ELEMENT FROM THE FLOW***** If we want to remove an element from the
+html flow (basicly you make the elements box a ghost, and it can overlay so you
+can create overlaying images and cool designes with that) we can use the
+"position: absolute;" element,*/
+
+/*POSITION ABSOLUTE***** If we give absolute positioning "position:absolute"
+to one child element, and set it to move "left: 100 px(it can be any direction
+and any number of px);" it will move to the right of the margin of the his parent
+object but with a 100 px within the parent margin and the child margin, and the
+other child elments that are beneeth move up like the absolute position child
+was deleted*/
+
+/*POSITION OVERLAYING**** If we push the relative position element into another
+element, the element with the relative position propriety overlays the other
+element, so we can overlay images or other elements with the "position: relative;"
+propriety*/
+
+/*POSITION ABSOLUTE***** If we give the absolute positioning "position:absolute"
+element to a child element, and set it to move "right: 30px;" it will move to the
+right of the margin of the parent object (but first we'll need to give the parent
+element the "position: relative" caracteristic just to tell the site that this is
+the parent of that child element) but with a 30px within the parent margin and
+the child margin.*/
+
+/*BASIC POSITION***** The basic position propriety that an element has is
+"position: static;", so if we push the static position element into another
+element, the element with the static position propriety pushes away the other
+element, so we cant overlay images or other elements with the "position: solid;"
+ propriety*/
+
+
+/********************************* CENTERING ***********************************/
+
+/*TEXT-ALIGN CENTERING***** If we want to center the content of a parent we can
+use "text-align: center;" but if we'll change the caracteristics of that
+content(ex:width, height, etc.), it will no longer be centered*/
+
+/*POSITION ABSOLUTE CENTERING***** If we want to center the content of a parent we
+can use margin and auto to centere the object (ex: margin: 0 auto 0 auto (to
+make it centered form left to right)) and if we'll change the caracteristics of
+that content(ex:width, height, etc.), it will still be centered*/
+
+/*POSITION CONECTION***** If we want to center the content of a parent we
+can use "psition: relative" or "position: absolute" and then use left or right
+or top or bottom plus the nr of px you want your object to go (ex: left: 10px;).
+ This is good for tables and imgs.*/
+
+
+/*********************************** FONTS ************************************/
+
+/*ADDING A FONT***** We use "font-family" to change basicly the font family of
+a text, but if we use it to a parent object(ex; body) this will cahnge all the
+text fonts in that parent element*/
+
+/*SPECIFIC FONT***** If we want to use a specific font we can use this:
+ "font-family: (the font name: verdana), (the font family, ex: serif)"
+ basicly we write the font-family element, then the font name, then a comma ","
+ and the the font family we want, but be careful, every font comes from a
+ font family (ex:Times new roman is from the serif family) */
+
+ /*WEB SAFE FONTS***** Be careful there are fonts that on other devices or
+ machines look different than your machine see, so to avoid that you can use
+ web sefe fonts*/
+
+ /*IF THEY DONT HAVE THAT FONT YOU CHOSE********** If you want to use a font and
+ you dont want to worry about seeing other font than the font you chose, you can
+ put some more font (as reserve plans) like this:
+
+      "font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;"
+                Specific font > less specific > less less specific
+
+ So what this means is that if they dont have the "Helvetica Neue" font, use the
+ Helvetica, if they dont have this, use Arial and if they dont have Arial use
+ any sans-serif font, and for that use CSS Font Stack website.*/
+
+/*IF YOU WANT EVERYBODY TO HAVE A FONT YOU CHOSE********** If you want everybody
+tho have a font you chose and to look good you can use the Google Fonts site, there
+are over 800 fonts free to use, and they look good.*/
+
+/*FONT INTRODUCING****** If you want to introduce a Google font into your website
+you need to copy the link code they give you and paste it into your html head,
+moastly favorable under the other links, and then copy the "CSS rules to specify families"
+font-familys and names and stuff, you got it.*/
+
+
+/******************************** FLOAT SELECTORS ********************************/
+
+/*The float propriety makes the text or the things that are under the element
+with this propriety go in the direction that we specify ex: "float: left" is positioning
+the things under the element at the right of the elements,*/
+
+/* HESITATE USING FLOATE FOR POSITIONING, TRY TO USE THE OTHER METHODS FOR THAT
+AND KEEP THE FLOAT FOR WRAPING TEXT ARROUND OBJECTS*/
+
+
+/******************************** CLEAR SELECTORS ********************************/
+
+/* The clear propriety basicly removes any propriety that was given to the element
+from the direction you specify ex: "clear: left;", clear is basicly the
+oposite of the float */
+
+
+/******************************** TAG SELECTORS ********************************/
+
+/*If you are out of images, you can go on flaticon.com, you will thank me later :) */
+
+/*If you want to put an animated image on your site, you can go on giphy.com,
+ you will thank me later :) */
+
+
+/******************************** TAG SELECTORS ********************************/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Papyrus, fantasy;
+  background-color: #02021c;
+}
+
+h1:hover {
+  /*hover is a Pseudo-class and what it means is that it does something you say
+when the mouse is over (hovering) on the image or table or h1 or etc*/
+  color: gold;
+}
+h1{
+  color: #3000c3;
+}
+
+h2{
+  color: #bd6418
+}
+
+h3{
+  color: #4600b7;
+}
+
+a{
+    color: #ff8100c2;
+}
+
+hr{
+  border: 0;
+      height: 0; /* Firefox... */
+      box-shadow: 0 0
+      20px/*changes the width of the hr, the higher the width, the faded the line
+       gets, higher, less visible and higher fade distribution, pe scurt, intinde
+       umbra liniei, o intinde si o diluieaza*/
+      6px /*changes the width of the hr and the color intensity of the shadow,
+       higher, more visible and higher in height pe scurt, intinde
+       umbra liniei si o concentreaza*/
+       #171940
+}
+hr::after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+
+/******************************** CLASS SELECTORS ******************************/
+
+/*CLASS SELECTORS ARE BETTER THAN ID SELECTORS FOR CSS EDITING*/
+
+/*We need to put "." in the front of the ID SELECTOR*/
+
+.first-heading {
+  /*100% in font size is equal to 16 px in font size */
+  /*1em in font size is equal to 16 px in font size*/
+  /* the rem is different from the normal em in the way that the rem ignors
+  the other parent sizeing and sticks just to their valiu unlike the normal em
+  that is puttin the parent sizeing and his size together making it bigger*/
+  font-size: 6rem;
+  margin: 2.2rem auto 0 auto;
+  font-family: 'Courgette', cursive;
+  width: 24rem;
+  height: 5rem;
+  padding-bottom: 2rem;
+}
+
+.first-p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 2.3rem;
+  color: #4600b7;
+  font-weight: normal;
+  padding-bottom: 2rem;
+}
+
+.top-container {
+  padding-top: 7.5rem;
+  position: relative;
+}
+
+.pro {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.pro:hover{
+  color: #f89f59;
+}
+
+.middle-container {
+  padding-top: 2.5rem;
+  position: relative;
+  font-size: 20px;
+}
+
+.second_p{
+  color: #cfcfcf;
+}
+.bottom-container {
+  margin: 0;
+  background-color: #0f0d2d59;
+  line-height: 4;
+}
+
+.space {
+  position: absolute;
+  left: 620px;
+  top: 450px;
+  width: 100px;
+}
+
+.Ufo{
+  position: absolute;
+  width: 100px;
+  left: 20%;
+  top:10%;
+}
+.Dstar{
+  position: absolute;
+  width: 100px;
+  right: 500px;
+  top: 70px;
+}
+
+.planet{
+  position: absolute;
+  width: 100px;
+  right: 500px;
+  top: 100px;
+}
+
+.jupiter{
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  width: 150px;
+}
+
+.RedPlanet{
+  position: absolute;
+  right: 500px;
+  top: 350px;
+  width: 200px;
+}
+.SpaceComputer{
+  margin: 0;
+  width: 300px;
+}
+
+.eu_img{
+  width: 21.2rem;
+  height: 21.2rem;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 80px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+.computer_img{
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin-right: 30px;
+  /*The float propriety makes the text or the things that are under the element
+  with this propriety go in the direction that we specify ex: "float: left" is positioning
+  the things under the element at the right of the elements,*/
+}
+.web{
+  position: absolute;
+  left: 13%;
+  top: 2%;
+  width: 90px;
+}
+
+.orbit{
+  position: absolute;
+  width: 100px;
+  right: 12%;
+  top: 11%;
+}
+
+.vdcard{
+  position: absolute;
+  width: 120px;
+  left: 79%;
+  top: 93%;
+}
+
+.processor{
+  position: absolute;
+  width: 100px;
+  right: 40%;
+  top: 65%;
+}
+
+.ram{
+  position: absolute;
+  width: 100px;
+  left: 5%;
+  top: 89%;
+}
+
+.ServiceWare_img{
+  width: 25%;
+  height: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.skills{
+    position: relative;
+}
+.skill1{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.skill_p{
+  color: #cfcfcf;
+}
+
+.skill2{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.bottom_links{
+  word-spacing: 10px;
+  font-size: 22px;
+}
+
+.bottom_line{
+  color: #EAF6F6;
+}
+
+.BUTTON_ECH {
+
+   background: #bd6418;
+   background-image: -webkit-linear-gradient(top, #c27d42, #bd6418);
+   background-image: -moz-linear-gradient(top, #c27d42, #bd6418);
+   background-image: -ms-linear-gradient(top, #c27d42, #bd6418);
+   background-image: -o-linear-gradient(top, #c27d42, #bd6418);
+   background-image: -webkit-gradient(to bottom, #c27d42, #bd6418);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   height: 50px;
+   line-height: 56px;
+   color: #f9be39;
+   font-family: Helvetica;
+   width: 200px;
+   font-size: 25px;
+   font-weight: 500;
+   padding: 2px;
+   -webkit-box-shadow: -1px 4px 100px 0 #171940;
+   -moz-box-shadow: -1px 4px 100px 0 #171940;
+   box-shadow: -1px 4px 100px 0 #171940;
+   text-shadow: -3px 5px 8px #5d2c02;
+   border: solid #bd6418 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_ECH:hover {
+   border: solid #bd6418 0;
+   background: #bd6418;
+   background-image: -webkit-linear-gradient(top, #bd6418, #c27d42);
+   background-image: -moz-linear-gradient(top, #bd6418, #c27d42);
+   background-image: -ms-linear-gradient(top, #bd6418, #c27d42);
+   background-image: -o-linear-gradient(top, #bd6418, #c27d42);
+   background-image: -webkit-gradient(to bottom, #bd6418, #c27d42);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.contact-me{
+  padding-bottom: 40px;
+  line-height: 3;
+}
+
+.last_p{
+  margin: 0;
+  padding-bottom: 20px;
+  color: #cfcfcf
+}
+
+.last_h3{
+  margin-bottom: 0;
+}
